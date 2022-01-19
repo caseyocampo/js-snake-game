@@ -19,6 +19,28 @@
             <h2>Score: <span id="score">0</span></h2>
             <div class="grid"></div>
             <button id="start">Start/Restart</button>
+            <div class="keyboard">
+                <p>
+                    Use arrow keys on your keyboard of the below arrow buttons
+                    to move the snake.
+                </p>
+                <div class="keyboard--buttons">
+                    <button id="up" onclick="controlKeyboard(up)">
+                        Up &#9650;
+                    </button>
+                    <div class="keyboard--buttons--bottom">
+                        <button id="left" onclick="controlKeyboard(left)">
+                            Left &#9668;
+                        </button>
+                        <button id="down" onclick="controlKeyboard(down)">
+                            Down &#9660;
+                        </button>
+                        <button id="right" onclick="controlKeyboard(right)">
+                            Right &#9658;
+                        </button>
+                    </div>
+                </div>
+            </div>
         </main>
         <script src="index.js"></script>
     </body>

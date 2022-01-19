@@ -112,3 +112,21 @@ function control(e) {
 }
 document.addEventListener('keyup', control)
 startButton.addEventListener('click', startGame)
+
+// On screen keyboard controls
+const up = document.getElementById('up')
+const down = document.getElementById('down')
+const left = document.getElementById('left')
+const right = document.getElementById('right')
+
+function controlKeyboard(e) {
+    if (e === right) {
+        direction = 1
+    } else if (e === up) {
+        direction = -width
+    } else if (e === left) {
+        direction = -1
+    } else if (e === down) {
+        direction = +width
+    }
+}

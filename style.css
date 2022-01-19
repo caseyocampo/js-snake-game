@@ -68,3 +68,37 @@ main h2 {
 .apple {
     background-color: #244408;
 }
+
+.keyboard {
+    margin-top: 1em;
+    max-width: 204px;
+}
+
+.keyboard p {
+    margin-bottom: 1em;
+}
+
+.keyboard button {
+    padding: 0.5em;
+    margin: 5px;
+    -webkit-appearance: none;
+}
+
+.keyboard--buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+#up {
+    flex-grow: 3;
+}
+
+.keyboard--buttons--bottom {
+    display: flex;
+}
+
+#down,
+#left,
+#right {
+    flex-grow: 1;
+}
