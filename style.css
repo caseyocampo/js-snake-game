@@ -53,6 +53,10 @@ main h2 {
 
 #start {
     background: #29335b;
+    border-top: 2px solid #767676;
+    border-left: 2px solid #767676;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
     color: white;
     font-size: 1.25rem;
     margin-top: 1em;
@@ -80,6 +84,10 @@ main h2 {
 
 .keyboard button {
     background: white;
+    border-top: 2px solid #767676;
+    border-left: 2px solid #767676;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
     color: black;
     font-size: 1rem;
     padding: 1em;
