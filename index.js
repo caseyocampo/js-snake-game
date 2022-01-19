@@ -48,10 +48,14 @@ function startGame() {
 
 function move() {
     if (
-        (currentSnake[0] + width >= width * width && direction === width) || //if snake has hit bottom
-        (currentSnake[0] % width === width - 1 && direction === 1) || //if snake has hit right wall
-        (currentSnake[0] % width === 0 && direction === -1) || //if snake has hit left wall
-        (currentSnake[0] - width < 0 && direction === -width) || //if snake has hit top
+        //if snake has hit bottom
+        (currentSnake[0] + width >= width * width && direction === width) ||
+        //if snake has hit right wall
+        (currentSnake[0] % width === width - 1 && direction === 1) ||
+        //if snake has hit left wall
+        (currentSnake[0] % width === 0 && direction === -1) ||
+        //if snake has hit top
+        (currentSnake[0] - width < 0 && direction === -width) ||
         squares[currentSnake[0] + direction].classList.contains('snake')
     )
         return clearInterval(timerId)
@@ -70,10 +74,8 @@ function move() {
         squares[currentSnake[0]].classList.remove('apple')
         //grow our snake by adding class of snake to it
         squares[tail].classList.add('snake')
-        console.log(tail)
         //grow our snake array
         currentSnake.push(tail)
-        console.log(currentSnake)
         //generate new apple
         generateApple()
         //add one to the score
@@ -82,9 +84,7 @@ function move() {
         scoreDisplay.textContent = score
         //speed up our snake
         clearInterval(timerId)
-        console.log(intervalTime)
         intervalTime = intervalTime * speed
-        console.log(intervalTime)
         timerId = setInterval(move, intervalTime)
     }
 
@@ -99,23 +99,14 @@ function generateApple() {
 }
 generateApple()
 
-// 39 is right arrow
-// 38 is for the up arrow
-// 37 is for the left arrow
-// 40 is for the down arrow
-
 function control(e) {
     if (e.keyCode === 39) {
-        console.log('right pressed')
         direction = 1
     } else if (e.keyCode === 38) {
-        console.log('up pressed')
         direction = -width
     } else if (e.keyCode === 37) {
-        console.log('left pressed')
         direction = -1
     } else if (e.keyCode === 40) {
-        console.log('down pressed')
         direction = +width
     }
 }
