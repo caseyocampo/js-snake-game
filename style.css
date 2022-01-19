@@ -1,10 +1,44 @@
+* {
+    font-family: 'Share Tech Mono', monospace;
+    margin: 0;
+    padding: 0;
+}
+
 html,
 body {
-    margin: 10;
-    padding: 10;
+    padding: 1em;
+}
+
+header {
+    background: #29335b;
+    color: white;
+}
+
+header h1 {
+    font-size: 3rem;
+    padding: 0.25em;
+    text-align: center;
+}
+
+body {
+    background: #cdd9ef;
+}
+
+main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+}
+
+main h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5em;
 }
 
 .grid {
+    background: #a4d40c;
     display: flex;
     flex-wrap: wrap;
     width: 200px;
@@ -17,10 +51,20 @@ body {
     height: 20px;
 }
 
+#start {
+    background: #29335b;
+    color: white;
+    font-size: 1.25rem;
+    margin-top: 1em;
+    padding: 0.5em 0;
+    width: 204px;
+    -webkit-appearance: none;
+}
+
 .snake {
-    background-color: green;
+    background-color: darkolivegreen;
 }
 
 .apple {
-    background-color: blue;
+    background-color: #244408;
 }
