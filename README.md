@@ -1,6 +1,6 @@
 # Classic Snake Game
 
-Built with pure JavaScript, HTML, and CSS.
+A classic Snake Game built with pure JavaScript, HTML, and CSS.
 
 Features:
 

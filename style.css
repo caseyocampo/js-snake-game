@@ -6,6 +6,7 @@
 
 html,
 body {
+    font-size: 16px;
     padding: 1em;
 }
 
@@ -79,7 +80,9 @@ main h2 {
 }
 
 .keyboard button {
-    padding: 0.5em;
+    color: black;
+    font-size: 1rem;
+    padding: 1em;
     margin: 5px;
     -webkit-appearance: none;
 }
@@ -101,4 +104,5 @@ main h2 {
 #left,
 #right {
     flex-grow: 1;
+    padding: 1em 0.5em;
 }
