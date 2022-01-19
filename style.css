@@ -80,6 +80,7 @@ main h2 {
 }
 
 .keyboard button {
+    background: white;
     color: black;
     font-size: 1rem;
     padding: 1em;
