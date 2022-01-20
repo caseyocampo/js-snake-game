@@ -129,6 +129,12 @@ main h2 {
     left: 0em;
 }
 
+.footer-text {
+    margin-bottom: 1em;
+    position: fixed;
+    bottom: 0;
+}
+
 @keyframes gameOver {
     0% {
         border: 3px solid red;
