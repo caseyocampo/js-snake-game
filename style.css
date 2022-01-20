@@ -130,9 +130,8 @@ main h2 {
 }
 
 .footer-text {
+    margin-top: 2em;
     margin-bottom: 1em;
-    position: fixed;
-    bottom: 0;
     text-align: center;
 }
 
