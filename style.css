@@ -121,11 +121,12 @@ main h2 {
 }
 
 .game-over::after {
-    content: 'Game Over';
+    content: 'Game Over 😩';
     font-size: 2rem;
     position: relative;
-    top: -3.75em;
-    left: 0.725em;
+    text-align: center;
+    top: -4.25em;
+    left: 0em;
 }
 
 @keyframes gameOver {
