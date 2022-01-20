@@ -59,8 +59,10 @@ function move() {
         //if snake has hit top
         (currentSnake[0] - width < 0 && direction === -width) ||
         squares[currentSnake[0] + direction].classList.contains('snake')
-    )
-        return grid.classList.add('game-over') && clearInterval(timerId)
+    ) {
+        grid.classList.add('game-over')
+        return clearInterval(timerId)
+    }
 
     //remove last element from our currentSnake array
     const tail = currentSnake.pop()
