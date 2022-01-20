@@ -29,6 +29,8 @@ createGrid()
 currentSnake.forEach((index) => squares[index].classList.add('snake'))
 
 function startGame() {
+    grid.classList.remove('game-over')
+
     //remove the snake
     currentSnake.forEach((index) => squares[index].classList.remove('snake'))
     //remove the apple
@@ -58,7 +60,7 @@ function move() {
         (currentSnake[0] - width < 0 && direction === -width) ||
         squares[currentSnake[0] + direction].classList.contains('snake')
     )
-        return clearInterval(timerId)
+        return grid.classList.add('game-over') && clearInterval(timerId)
 
     //remove last element from our currentSnake array
     const tail = currentSnake.pop()

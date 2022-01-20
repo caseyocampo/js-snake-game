@@ -4,11 +4,6 @@
     padding: 0;
 }
 
-html,
-body {
-    font-size: 16px;
-}
-
 header {
     background: #29335b;
     color: white;
@@ -43,7 +38,7 @@ main h2 {
     flex-wrap: wrap;
     width: 200px;
     height: 200px;
-    border: solid 2px black;
+    border: solid 3px black;
 }
 
 .square {
@@ -113,6 +108,38 @@ main h2 {
 #right {
     flex-grow: 1;
     padding: 1em 0.5em;
+}
+
+.game-over {
+    animation-name: gameOver;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.game-over::after {
+    content: 'Game Over';
+    font-size: 2rem;
+    position: relative;
+    top: -3.75em;
+    left: 0.725em;
+}
+
+@keyframes gameOver {
+    0% {
+        border: 3px solid red;
+    }
+    25% {
+        border: 3px solid black;
+    }
+    50% {
+        border: 3px solid red;
+    }
+    75% {
+        border: 3px solid black;
+    }
+    100% {
+        border: 3px solid red;
+    }
 }
 
 @media (max-width: 400px) {
