@@ -36,6 +36,11 @@ main h2 {
     margin-bottom: 0.5em;
 }
 
+button:focus,
+a:focus {
+    outline: 5px solid #57c395;
+}
+
 .grid {
     background: #a4d40c;
     display: flex;
