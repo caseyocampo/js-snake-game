@@ -36,6 +36,13 @@ main h2 {
     margin-bottom: 0.5em;
 }
 
+button {
+    border-top: 3px solid #767676;
+    border-left: 3px solid #767676;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
 button:focus,
 a:focus {
     outline: 5px solid #57c395;
@@ -57,10 +64,6 @@ a:focus {
 
 #start {
     background: #29335b;
-    border-top: 2px solid #767676;
-    border-left: 2px solid #767676;
-    border-right: 2px solid black;
-    border-bottom: 2px solid black;
     color: white;
     font-size: 1.25rem;
     margin-top: 1em;
@@ -88,14 +91,10 @@ a:focus {
 
 .keyboard button {
     background: white;
-    border-top: 2px solid #767676;
-    border-left: 2px solid #767676;
-    border-right: 2px solid black;
-    border-bottom: 2px solid black;
     color: black;
     font-size: 1rem;
     padding: 1em;
-    margin: 5px;
+    margin: 4px;
     -webkit-appearance: none;
 }
 
