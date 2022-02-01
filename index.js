@@ -116,13 +116,13 @@ function control(e) {
     // }
 
     // current best practice for keyboad event code
-    if (e.key === 'ArrowRight') {
+    if (e.code === 'ArrowRight') {
         direction = 1
-    } else if (e.key === 'ArrowUp') {
+    } else if (e.code === 'ArrowUp') {
         direction = -width
-    } else if (e.key === 'ArrowLeft') {
+    } else if (e.code === 'ArrowLeft') {
         direction = -1
-    } else if (e.key === 'ArrowDown') {
+    } else if (e.code === 'ArrowDown') {
         direction = +width
     }
 }
