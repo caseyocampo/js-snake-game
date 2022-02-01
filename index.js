@@ -104,13 +104,25 @@ function generateApple() {
 generateApple()
 
 function control(e) {
-    if (e.keyCode === 39) {
+    // deprecated .keyCode keyboard event
+    // if (e.keyCode === 39) {
+    //     direction = 1
+    // } else if (e.keyCode === 38) {
+    //     direction = -width
+    // } else if (e.keyCode === 37) {
+    //     direction = -1
+    // } else if (e.keyCode === 40) {
+    //     direction = +width
+    // }
+
+    // current best practice for keyboad event code
+    if (e.key === 'ArrowRight') {
         direction = 1
-    } else if (e.keyCode === 38) {
+    } else if (e.key === 'ArrowUp') {
         direction = -width
-    } else if (e.keyCode === 37) {
+    } else if (e.key === 'ArrowLeft') {
         direction = -1
-    } else if (e.keyCode === 40) {
+    } else if (e.key === 'ArrowDown') {
         direction = +width
     }
 }
